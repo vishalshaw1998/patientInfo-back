@@ -32,6 +32,10 @@ app.get("/room/:id", async (req, res) => {
     });
 });
 
+app.get("/", (req, res) => {
+    res.send("This site is Working");
+});
+
 app.listen(process.env.PORT || 3001, () => {
     console.log("Listening");
 });
